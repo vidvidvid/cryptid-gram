@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Box, Image } from "@chakra-ui/react";
-import bg from "./bg.png";
+import bg from "./bg2.png";
 import shape1 from "./shape1.png";
 import shape2 from "./shape2.png";
 
@@ -14,27 +14,24 @@ function Page({ redirectToRandomPage }) {
     <Box bgImage={`url(${bg})`} bgSize='cover' h='100vh' position='relative'>
       {/* gumbki */}
       <Image
-        right='250px' // kolko je oddaljen od desne
-        top='350px' // kolko je oddaljen od vrha
+        right='700px' // kolko je oddaljen od desne
+        top='100px' // kolko je oddaljen od vrha
         alt='gumb1' // samo za tvojo referenco, lahko spremenis v karkoli
         src={gumb} // ne rabis spreminjat (source slikice)
         position='absolute' // stays same
-        borderRadius='full' // ne rabis spreminjat
-        height='100px' // ne rabis spreminjat (razen, ce bos hotla manjsi/vecji gumb)
-        width='100px' // ne rabis spreminjat
-        onMouseEnter={() => setIsShape1Visible(true)} // ne rabis spreminjat
+        borderRadius='100%' // ne rabis spreminjat
+        height='100px' // ne rabis spreminjat (razen, ce bos hotla manjsi/vecji gumb)        onMouseEnter={() => setIsShape1Visible(true)} // ne rabis spreminjat
         onMouseLeave={() => setIsShape1Visible(false)} // ne rabis spreminjat
         onClick={redirectToRandomPage}
       />
       <Image
-        right='454px' // kolko je oddaljen od desne
-        top='817px' // kolko je oddaljen od vrha
+        right='503px' // kolko je oddaljen od desne
+        top='1539px' // kolko je oddaljen od vrha
         alt='gumb1' // samo za tvojo referenco, lahko spremenis v karkoli
         src={gumb} // ne rabis spreminjat (source slikice)
         position='absolute' // stays same
-        borderRadius='full' // ne rabis spreminjat
-        height='100px' // ne rabis spreminjat (razen, ce bos hotla manjsi/vecji gumb)
-        width='100px' // ne rabis spreminjat
+        borderRadius='100%' // ne rabis spreminjat
+        height='111px' // ne rabis spreminjat (razen, ce bos hotla manjsi/vecji gumb)
         onMouseEnter={() => setIsShape2Visible(true)} // moras prilagodit stevilko
         onMouseLeave={() => setIsShape2Visible(false)} // ne rabis spreminjat
         onClick={redirectToRandomPage}
