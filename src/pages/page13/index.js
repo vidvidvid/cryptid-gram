@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Box, Image } from "@chakra-ui/react";
-import bg from "./bg.png";
-import shape1 from "./shape1.png";
-import shape2 from "./shape2.png";
+import bg from "./bg13.png";
+import shape1 from "./shape25.png";
+import shape2 from "./shape26.png";
 
 import gumb from "../../gumb.svg";
 

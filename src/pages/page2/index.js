@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Box, Image } from "@chakra-ui/react";
 import bg from "./bg2.png";
-import shape1 from "./shape1.png";
-import shape2 from "./shape2.png";
+import shape1 from "./shape3.png";
+import shape2 from "./shape4.png";
 
 import gumb from "../../gumb.svg";
 
@@ -15,7 +15,7 @@ function Page({ redirectToRandomPage }) {
       {/* gumbki */}
       <Image
         right='700px' // kolko je oddaljen od desne
-        top='100px' // kolko je oddaljen od vrha
+        top='150px' // kolko je oddaljen od vrha
         alt='gumb1' // samo za tvojo referenco, lahko spremenis v karkoli
         src={gumb} // ne rabis spreminjat (source slikice)
         position='absolute' // stays same
@@ -32,7 +32,7 @@ function Page({ redirectToRandomPage }) {
         position='absolute' // stays same
         borderRadius='100%' // ne rabis spreminjat
         height='111px' // ne rabis spreminjat (razen, ce bos hotla manjsi/vecji gumb)
-        onMouseEnter={() => setIsShape2Visible(true)} // moras prilagodit stevilko
+        onMouseEnter={() => setIsShape1Visible(true)} // moras prilagodit stevilko
         onMouseLeave={() => setIsShape2Visible(false)} // ne rabis spreminjat
         onClick={redirectToRandomPage}
       />
@@ -41,7 +41,7 @@ function Page({ redirectToRandomPage }) {
       {isShape1Visible && ( // ce je shape 1 visible, se prikaze slika
         <Image
           height='20%' // doloca velikost glede na visino, sirina se prilagodi
-          alt='shape1' // samo za tvojo referenco, lahko spremenis v karkoli
+          alt='shape3' // samo za tvojo referenco, lahko spremenis v karkoli
           src={shape1} // ne rabis spreminjat (source slikice)
           position='absolute' // stays same
           right='300px' // kolko je oddaljen od desne
@@ -51,7 +51,7 @@ function Page({ redirectToRandomPage }) {
       {isShape2Visible && ( // ce je shape 1 visible, se prikaze slika
         <Image
           height='10%' // doloca velikost glede na visino, sirina se prilagodi
-          alt='shape2' // samo za tvojo referenco, lahko spremenis v karkoli
+          alt='shape4' // samo za tvojo referenco, lahko spremenis v karkoli
           src={shape2} // ne rabis spreminjat (source slikice)
           position='absolute' // stays same
           right='300px' // kolko je oddaljen od desne

@@ -8,7 +8,7 @@ import gumb from "../../gumb.svg";
 
 function Page({ redirectToRandomPage }) {
   const [isShape1Visible, setIsShape1Visible] = useState(false);
-  const [isShape2Visible, setIsShape2Visible] = useState(true); //ko programiras si daj true, na koncu popravi na false
+  const [isShape2Visible, setIsShape2Visible] = useState(false); //ko programiras si daj true, na koncu popravi na false
 
   return (
     <Box bgImage={`url(${bg})`} bgSize='cover' h='100vh' position='relative'>

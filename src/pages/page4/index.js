@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Box, Image } from "@chakra-ui/react";
-import bg from "./bg.png";
-import shape1 from "./shape1.png";
-import shape2 from "./shape2.png";
+import bg from "./bg4.png";
+import shape1 from "./shape7.png";
+import shape2 from "./shape8.png";
 
 import gumb from "../../gumb.svg";
 
@@ -14,8 +14,8 @@ function Page({ redirectToRandomPage }) {
     <Box bgImage={`url(${bg})`} bgSize='cover' h='100vh' position='relative'>
       {/* gumbki */}
       <Image
-        right='250px' // kolko je oddaljen od desne
-        top='350px' // kolko je oddaljen od vrha
+        right='155px' // kolko je oddaljen od desne
+        top='155px' // kolko je oddaljen od vrha
         alt='gumb1' // samo za tvojo referenco, lahko spremenis v karkoli
         src={gumb} // ne rabis spreminjat (source slikice)
         position='absolute' // stays same
@@ -25,8 +25,8 @@ function Page({ redirectToRandomPage }) {
         onClick={redirectToRandomPage}
       />
       <Image
-        right='454px' // kolko je oddaljen od desne
-        top='817px' // kolko je oddaljen od vrha
+        right='900px' // kolko je oddaljen od desne
+        top='1317px' // kolko je oddaljen od vrha
         alt='gumb1' // samo za tvojo referenco, lahko spremenis v karkoli
         src={gumb} // ne rabis spreminjat (source slikice)
         position='absolute' // stays same
