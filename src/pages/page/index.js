@@ -8,7 +8,7 @@ import gumb from "../../gumb.svg";
 
 function Page({ redirectToRandomPage }) {
   const [isShape1Visible, setIsShape1Visible] = useState(false);
-  const [isShape2Visible, setIsShape2Visible] = useState(true); //ko programiras si daj true, na koncu popravi na false
+  const [isShape2Visible, setIsShape2Visible] = useState(false); //ko programiras si daj true, na koncu popravi na false
 
   return (
     <Box bgImage={`url(${bg})`} bgSize='cover' h='100vh' position='relative'>
@@ -21,7 +21,8 @@ function Page({ redirectToRandomPage }) {
         position='absolute' // stays same
         borderRadius='100%' // ne rabis spreminjat
         height='100px' // ne rabis spreminjat (razen, ce bos hotla manjsi/vecji gumb)        onMouseEnter={() => setIsShape1Visible(true)} // ne rabis spreminjat
-        onMouseLeave={() => setIsShape1Visible(false)} // ne rabis spreminjat
+        onMouseLeave={() => setIsShape1Visible(false)}
+        onMouseEnter={() => setIsShape1Visible(true)} // ne rabis spreminjat
         onClick={redirectToRandomPage}
       />
       <Image
@@ -32,7 +33,8 @@ function Page({ redirectToRandomPage }) {
         position='absolute' // stays same
         borderRadius='100%' // ne rabis spreminjat
         height='100px' // ne rabis spreminjat (razen, ce bos hotla manjsi/vecji gumb)        onMouseEnter={() => setIsShape2Visible(true)} // moras prilagodit stevilko
-        onMouseLeave={() => setIsShape2Visible(false)} // ne rabis spreminjat
+        onMouseLeave={() => setIsShape2Visible(false)}
+        onMouseEnter={() => setIsShape2Visible(true)} // ne rabis spreminjat
         onClick={redirectToRandomPage}
       />
 

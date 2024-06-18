@@ -21,7 +21,8 @@ function Page({ redirectToRandomPage }) {
         position='absolute' // stays same
         borderRadius='100%' // ne rabis spreminjat
         height='100px' // ne rabis spreminjat (razen, ce bos hotla manjsi/vecji gumb)        onMouseEnter={() => setIsShape1Visible(true)} // ne rabis spreminjat
-        onMouseLeave={() => setIsShape1Visible(false)} // ne rabis spreminjat
+        onMouseLeave={() => setIsShape1Visible(false)}
+        onMouseEnter={() => setIsShape1Visible(true)} // ne rabis spreminjat
         onClick={redirectToRandomPage}
       />
       <Image
@@ -32,7 +33,8 @@ function Page({ redirectToRandomPage }) {
         position='absolute' // stays same
         borderRadius='100%' // ne rabis spreminjat
         height='100px' // ne rabis spreminjat (razen, ce bos hotla manjsi/vecji gumb)        onMouseEnter={() => setIsShape2Visible(true)} // moras prilagodit stevilko
-        onMouseLeave={() => setIsShape2Visible(false)} // ne rabis spreminjat
+        onMouseLeave={() => setIsShape2Visible(false)}
+        onMouseEnter={() => setIsShape2Visible(true)} // ne rabis spreminjat
         onClick={redirectToRandomPage}
       />
 
