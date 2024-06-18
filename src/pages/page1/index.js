@@ -15,7 +15,7 @@ function Page({ redirectToRandomPage }) {
       {/* gumbki */}
       <Image
         right='250px' // kolko je oddaljen od desne
-        top='350px' // kolko je oddaljen od vrha
+        top='300px' // kolko je oddaljen od vrha
         alt='gumb1' // samo za tvojo referenco, lahko spremenis v karkoli
         src={gumb} // ne rabis spreminjat (source slikice)
         position='absolute' // stays same
@@ -53,8 +53,8 @@ function Page({ redirectToRandomPage }) {
           alt='shape2' // samo za tvojo referenco, lahko spremenis v karkoli
           src={shape2} // ne rabis spreminjat (source slikice)
           position='absolute' // stays same
-          right='300px' // kolko je oddaljen od desne
-          top='520px' // kolko je oddaljen od vrha
+          right='700px' // kolko je oddaljen od desne
+          top='1450px' // kolko je oddaljen od vrha
         />
       )}
     </Box>

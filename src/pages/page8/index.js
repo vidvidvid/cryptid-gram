@@ -8,14 +8,14 @@ import gumb from "../../gumb.svg";
 
 function Page({ redirectToRandomPage }) {
   const [isShape1Visible, setIsShape1Visible] = useState(false);
-  const [isShape2Visible, setIsShape2Visible] = useState(true); //ko programiras si daj true, na koncu popravi na false
+  const [isShape2Visible, setIsShape2Visible] = useState(false); //ko programiras si daj true, na koncu popravi na false
 
   return (
     <Box bgImage={`url(${bg})`} bgSize='cover' h='100vh' position='relative'>
       {/* gumbki */}
       <Image
-        right='250px' // kolko je oddaljen od desne
-        top='350px' // kolko je oddaljen od vrha
+        right='677px' // kolko je oddaljen od desne
+        top='1750px' // kolko je oddaljen od vrha
         alt='gumb1' // samo za tvojo referenco, lahko spremenis v karkoli
         src={gumb} // ne rabis spreminjat (source slikice)
         position='absolute' // stays same
@@ -25,8 +25,8 @@ function Page({ redirectToRandomPage }) {
         onClick={redirectToRandomPage}
       />
       <Image
-        right='454px' // kolko je oddaljen od desne
-        top='817px' // kolko je oddaljen od vrha
+        right='451px' // kolko je oddaljen od desne
+        top='1239px' // kolko je oddaljen od vrha
         alt='gumb1' // samo za tvojo referenco, lahko spremenis v karkoli
         src={gumb} // ne rabis spreminjat (source slikice)
         position='absolute' // stays same
@@ -43,8 +43,8 @@ function Page({ redirectToRandomPage }) {
           alt='shape1' // samo za tvojo referenco, lahko spremenis v karkoli
           src={shape1} // ne rabis spreminjat (source slikice)
           position='absolute' // stays same
-          right='300px' // kolko je oddaljen od desne
-          top='120px' // kolko je oddaljen od vrha
+          right='70px' // kolko je oddaljen od desne
+          top='1420px' // kolko je oddaljen od vrha
         />
       )}
       {isShape2Visible && ( // ce je shape 1 visible, se prikaze slika
@@ -53,8 +53,8 @@ function Page({ redirectToRandomPage }) {
           alt='shape2' // samo za tvojo referenco, lahko spremenis v karkoli
           src={shape2} // ne rabis spreminjat (source slikice)
           position='absolute' // stays same
-          right='300px' // kolko je oddaljen od desne
-          top='520px' // kolko je oddaljen od vrha
+          right='740px' // kolko je oddaljen od desne
+          top='780px' // kolko je oddaljen od vrha
         />
       )}
     </Box>

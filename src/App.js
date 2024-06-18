@@ -14,6 +14,8 @@ import Page11 from "./pages/page11";
 import Page12 from "./pages/page12";
 import Page13 from "./pages/page13";
 
+console.log("hover and click");
+
 
 function App() {
   const [pageNumber, setPageNumber] = useState(2);
@@ -26,6 +28,9 @@ function App() {
     console.log("newPage", newPage);
     setPageNumber(newPage);
   };
+
+
+
 
   return (
     <div className='App'>

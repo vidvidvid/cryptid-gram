@@ -8,7 +8,7 @@ import gumb from "../../gumb.svg";
 
 function Page({ redirectToRandomPage }) {
   const [isShape1Visible, setIsShape1Visible] = useState(false);
-  const [isShape2Visible, setIsShape2Visible] = useState(true); //ko programiras si daj true, na koncu popravi na false
+  const [isShape2Visible, setIsShape2Visible] = useState(false); //ko programiras si daj true, na koncu popravi na false
 
   return (
     <Box bgImage={`url(${bg})`} bgSize='cover' h='100vh' position='relative'>
@@ -25,7 +25,7 @@ function Page({ redirectToRandomPage }) {
         onClick={redirectToRandomPage}
       />
       <Image
-        right='503px' // kolko je oddaljen od desne
+        right='502px' // kolko je oddaljen od desne
         top='1539px' // kolko je oddaljen od vrha
         alt='gumb1' // samo za tvojo referenco, lahko spremenis v karkoli
         src={gumb} // ne rabis spreminjat (source slikice)
@@ -44,18 +44,18 @@ function Page({ redirectToRandomPage }) {
           alt='shape3' // samo za tvojo referenco, lahko spremenis v karkoli
           src={shape1} // ne rabis spreminjat (source slikice)
           position='absolute' // stays same
-          right='300px' // kolko je oddaljen od desne
-          top='120px' // kolko je oddaljen od vrha
+          right='270px' // kolko je oddaljen od desne
+          top='390px' // kolko je oddaljen od vrha
         />
       )}
       {isShape2Visible && ( // ce je shape 1 visible, se prikaze slika
         <Image
-          height='10%' // doloca velikost glede na visino, sirina se prilagodi
+          height='18%' // doloca velikost glede na visino, sirina se prilagodi
           alt='shape4' // samo za tvojo referenco, lahko spremenis v karkoli
           src={shape2} // ne rabis spreminjat (source slikice)
           position='absolute' // stays same
-          right='300px' // kolko je oddaljen od desne
-          top='520px' // kolko je oddaljen od vrha
+          right='560px' // kolko je oddaljen od desne
+          top='1200px' // kolko je oddaljen od vrha
         />
       )}
     </Box>
